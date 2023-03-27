@@ -214,6 +214,17 @@ var submitButton = document.createElement("button");
 
 
 //User - submit initials
+var userInitials = document.createElement("input");
+  userInitials.setAttribute("id", "user-input");
+  userInitials.setAttribute("class", "user-input");
+
+  scoreContainer.appendChild(scoreDiv);
+  scoreContainer.appendChild(scoreHeader);
+  scoreContainer.appendChild(enterInitials);
+  scoreContainer.appendChild(userInitials);
+  scoreContainer.appendChild(submitButton);
+
+  mnElement.appendChild(scoreContainer);
 
 
 
