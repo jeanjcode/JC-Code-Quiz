@@ -60,30 +60,9 @@ var countdownClock = 60;
    hdrContainer.appendChild(timerElement);
  };
 
- //Quiz Over - once quiz is completed
+ //Once quiz is completed
 var renderQuizOver = function () {
-  var gameOverText = document.createElement("p");
-  gameOverText.setAttribute("class", "game-over-text");
-  gameOverText.textContent =
-    "Game Over";
-
-    var gameOverDiv1 = document.createElement("div");
-    gameOverDiv1.appendChild(gameOverText);
-  
-    var retryButton = document.createElement("button");
-    retryButton.setAttribute("id", "startbtn");
-    retryButton.textContent = "Play Again";
-  
-    var gameOverDiv2 = document.createElement("div");
-    gameOverDiv2.appendChild(retryButton);
-  
-    var gameOverMainDiv = document.createElement("div");
-    gameOverMainDiv.setAttribute("class", "quiz");
-    gameOverMainDiv.appendChild(gameOverDiv1);
-    gameOverMainDiv.appendChild(gameOverDiv2);
-    mnElement.appendChild(gameOverMainDiv);
-
-
+ 
 
 //Return to main page
   var refreshPage = function () {
