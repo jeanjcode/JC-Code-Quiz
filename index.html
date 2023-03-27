@@ -9,23 +9,31 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
 
+  
   <body>
-    <div class="scores"><a href="highscores.html">View Highscores</a></div>
+    
+    <header id="header" class="header">
+      <h1>Coding Quiz Challenge</h1> 
+            <br> <br>
+   
+      <a class="highscore" href="./highscores.html"> View Highscores</a>
 
- 
+      <p class="header-content"> Try to answer the following code-related questions within the time
+        limit. <br> <br> Keep in mind that incorrect answers will penalize your
+        score/time by ten seconds!</p>
+    </header>
 
-    <div class="wrapper">
-      <div id="start-screen" class="start">
-        <h1>Coding Quiz Challenge</h1>
-        <p>
-          Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          score/time by ten seconds!
-        </p>
-        <button id="startbtn">Start Quiz</button>
+    <main class="main-element" id="main-element">
+      <div class="quiz" id="start-quiz-div">
+        <h2 id="start-quiz-header"> Challenge</h2>
+        <div class="start-button-div" id="start-button-div">
+          <button id="startbtn">Start Quiz</button>
+        </div>
       </div>
+    </main>
 
-     
+
+
 
 
     <script src="./assets/js/script.js"></script>
