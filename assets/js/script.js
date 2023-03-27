@@ -194,7 +194,22 @@ var renderScore = function () {
 
   
 //Score container
+var scoreContainer = document.createElement("div");
+  scoreContainer.setAttribute("id", "score-container");
+  scoreContainer.setAttribute("class", "score-container");
 
+var scoreHeader = document.createElement("h2");
+  scoreHeader.setAttribute("id", "score-title");
+  scoreHeader.textContent = `Your Score Is: ${countdownClock}`;
+
+var enterInitials = document.createElement("p");
+  enterInitials.setAttribute("class", "user-initials");
+  enterInitials.textContent = `Enter Initials:`;
+
+var submitButton = document.createElement("button");
+  submitButton.setAttribute("id", "submit-btn");
+  submitButton.setAttribute("class", "submit-btn");
+  submitButton.textContent = `Submit Score`;
 
 
 
