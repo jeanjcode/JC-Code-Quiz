@@ -207,47 +207,8 @@ var userInitials = document.createElement("input");
 
 
 
-
-
-// Save data - local storage
-  var saveData = function () {
-    var dataFromLS = localStorage.getItem("user-input");
-
-    var input = document.getElementById("user-input");
-    var inputArray = [];
-    let userCredentials = {
-      initials: input.value,
-      score: finalScore,
-    };
-    if (!dataFromLS) {
-      inputArray.push(userCredentials);
-      localStorage.setItem("user-input", JSON.stringify(inputArray));
-    } else {
-      var savedCredentials = JSON.parse(dataFromLS);
-      savedCredentials.push(userCredentials);
-      localStorage.setItem("user-input", JSON.stringify(savedCredentials));
-    }
-  };
-
+// Save data 
   submitButton.addEventListener("click", saveData);
-};
-
-var checkLocalStorage = function () {
-  var userHighscores = JSON.parse(localStorage.getItem(key));
-
-  if (!userHighscores) {
-    localStorage.setItem(key, JSON.stringify(defaultValue));
-  }
-};
-
-var getFromLocalStorage = function (key, defaultValue) {
-  var localStorageData = JSON.parse(localStorage.getItem(key));
-
-  if (!localStorageData) {
-    return defaultValue;
-  } else {
-    return localStorageData;
-  }
 };
 
 
