@@ -1,111 +1,57 @@
-// Start button 
-var startBtn = document.getElementById("start");
-
-//Enable button
-startBtn.addEventListener("click", function () {
-  StartQuiz();
-  $("#start").remove();  
-});
-
-
-//VAR
-var questions = document.getElementById("questions");
-var a = document.querySelector("#a");
-var b = document.querySelector("#b");
-var c = document.querySelector("#c");
-
-
-var Choices = document.querySelectorAll(".choice");
-var finalScore = document.querySelector(".finalScore");
-var Results = document.getElementById("results");
-var Initials = document.getElementById("userInitials");
-var submitBtn = document.querySelector("#submitBtn");
-var highscores = document.querySelector("scores");
-
 
 
 // Questions and answers
 var questions = [
   {
     question:
-      "Q1. ...",
+      "Q1. HTML is a... ?",
 
-    A: "A. ...",
-    B: "B. ...",
-    C: "C. ...",
-    // ans: "A./B./C.",
+    A: "A. Programming language",
+    B: "B. OOP language",
+    C: "C. Markup language",
+    // ans: "C.",
   },
   {
     question:
-      "Q2. ...",
+      "Q2. HTML uses...?",
 
-    A: "A. ...",
-    B: "B. ...",
-    C: "C. ...",
-    // ans: "A./B./C.",
+    A: "A. User-defined tags",
+    B: "B. Predefined tags",
+    C: "C.  Fixed tags defined by the language",
+    // ans: "C.",
   },
   {
     question:
-      "Q3. ...",
+      "Q3.  To set the style for just one element, which css selector will we use?",
 
-    A: "A. ...",
-    B: "B. ...",
-    C: "C. ...",
-    // ans: "A./B./C.",
+    A: "A. id",
+    B: "B. class",
+    C: "C. name",
+    // ans: "A.",
   },
   {
     question:
-      "Q4. ...",
+      "Q4. The HTML tag that specifies a CSS style embedded in an element is the...",
 
-    A: "A. ...",
-    B: "B. ...",
-    C: "C. ...",
-    // ans: "A./B./C.",
+    A: "A. Design",
+    B: "B. Style",
+    C: "C. Define",
+    // ans: "B.",
   },  {
     question:
-      "Q5. ...",
+      "Q5. Where in an HTML document is the correct place to refer to an external style sheet?",
 
-    A: "A. ...",
-    B: "B. ...",
-    C: "C. ...",
-    // ans: "A./B./C.",
+    A: "A. At the end of the document",
+    B: "B. In the <body> section",
+    C: "C. In the <head> section  ",
+    // ans: "C.",
   },  {
     question:
-      "Q6. ...",
+      "Q6. What does CSS stand for?",
 
-    A: "A. ...",
-    B: "B. ...",
+    A: "A. Computer Style Sheets  ",
+    B: "B. Cascading Style Sheets  ",
     C: "C. ...",
-    // ans: "A./B./C.",
+    // ans: "B.",
   },
   ];
-
-//Questions
-var questionNumber = 0;
-var lastQuestion = questions.length - 0;
-var result = 0;
-
-function displayquestions() {
-  var quiz = questions;
-
-questions.innerHTML = quiz[questionNumber].question; 
-
-
-//Choices
-  a.innerHTML = quiz[questionNumber].A;
-  b.innerHTML = quiz[questionNumber].B;
-  c.innerHTML = quiz[questionNumber].C;
-
-//Checking choices against answers 
-Choices.forEach(choicesButton) => {
-  choicesButton.addEventListener("click", function () {
-    var userSelec = choicesButton.textContent;
-    checkAns(userSelec);
-  )
- 
-  }};
-  
-
-
-
-
