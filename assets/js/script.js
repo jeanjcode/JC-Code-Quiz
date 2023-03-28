@@ -5,6 +5,7 @@ var hdrContainer = document.getElementById("header");
 var mnElement = document.getElementById("main-element");
 
 
+
 //Clock
 var countdownClock = 60;
 
@@ -116,7 +117,7 @@ var renderQuestion = function () {
 
   mnElement.appendChild(questionsContainer);
 
-  
+
 
   // Answers
   var renderAnswers = function (answer, index) {
@@ -165,7 +166,7 @@ var answerValidation = function (event) {
 var renderScore = function () {
   document.querySelector("#clock").remove();
   document.getElementById("question-element").remove();
-  var finalScore = countdownClock;
+ 
 
   var scoreDiv = document.createElement("div");
   scoreDiv.setAttribute("class", "score-div");
